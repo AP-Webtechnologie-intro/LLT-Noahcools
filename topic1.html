@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars - Topic 1</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px;
+        }
+
+        nav a {
+            color: #ffe81f;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #ffe81f;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .leaflet-map {
+            height: 300px;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1f1f1f;
+            color: #ffe81f;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Star Wars</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="overzicht.html">Overzicht</a>
+        <a href="topic1.html">Karakters</a>
+        <a href="topic2.html">Geschiedenis</a>
+        <a href="topic3.html">Partijen</a>
+        <a href="topic4.html">Films</a>
+        <a href="topic5.html">Series</a>
+        <a href="topic6.html">The force</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Karakters</h2>
+        <h3>Hoofdpersonage's van de eerste trilogy</h3>
+        <p>Hier ga ik de hoofdpersonage's van de originele trilogie uitleggen</p>
+        <ul>
+            <li><h3>Luke Skywalker (gespeeld door Mark Hamill):</h3>
+                <p>Luke is een jonge boer op de woestijnplaneet Tatooine. Hij ontdekt zijn kracht in de Force en wordt een Jedi, die een cruciale rol speelt in het verslaan van het kwaad in het sterrenstelsel.</p>
+                <figure>
+                    <img src="data:image/jpeg;base64,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" alt="Luke Skywalker">
+                    <figcaption>Luke Skywalker met zijn eerstre lightsaber.</figcaption>
+                </figure>
+            </li>
+            <li><h3>Prinses Leia Organa (gespeeld door Carrie Fisher):</h3>
+            <p>Leia is een leider van het verzet tegen het Galactische Keizerrijk. Ze is een van de leiders van de Rebel Alliance en speelt een sleutelrol in het verzet tegen de tirannie van het keizerrijk.</p>
+            </li>
+            <li><h3>Han Solo (gespeeld door Harrison Ford):</h3>
+            <p>Han is een smokkelaar en kapitein van het ruimteschip de Millennium Falcon. Hij sluit zich aan bij het verzet en wordt een belangrijk lid van het team dat vecht tegen het keizerrijk.</p>
+            </li>
+            <li><h3>Darth Vader (stem van James Earl Jones, fysiek gespeeld door David Prowse):</h3>
+            <p>Voormalig Jedi Anakin Skywalker, die zich heeft bekeerd tot de donkere kant en een Sith Lord is geworden. Vader is een van de belangrijkste antagonisten in de originele trilogie.</p>
+            </li>    
+            <li><h3>Obi-Wan Kenobi (gespeeld door Alec Guinness):</h3>
+            <p>Een wijze Jedi-meester die Luke Skywalker begeleidt in zijn reis om een Jedi te worden. Obi-Wan heeft ook een geschiedenis met Anakin Skywalker (Darth Vader).</p>
+            </li>
+        </ul>
+        <h3>Hieronder worden de personages van de prequel's uitgelegd</h3>
+        <ul>
+            <li><h3>Anakin Skywalker / Darth Vader (gespeeld door Jake Lloyd en Hayden Christensen):</h3>
+                <p>Het centrale personage van de prequels. Anakin begint als een jonge slaaf op de woestijnplaneet Tatooine en wordt later opgeleid als Jedi, maar valt uiteindelijk naar de donkere kant van de Force en wordt Darth Vader.</p>
+            </li>
+            <li><h3>Obi-Wan Kenobi (gespeeld door Ewan McGregor):</h3>
+            <p>Een Jedi-meester en mentor van Anakin Skywalker. Obi-Wan speelt een sleutelrol in het proberen te begrijpen en tegenhouden van de duistere transformatie van Anakin.</p>
+            </li>
+            <li><h3>Padmé Amidala (gespeeld door Natalie Portman):</h3>
+            <p>Koningin en later senator van Naboo. Ze is betrokken bij politieke intrige en een geheime liefdesrelatie met Anakin Skywalker.</p>
+            </li>
+            <li><h3>Qui-Gon Jinn (gespeeld door Liam Neeson):</h3>
+            <p>Jedi-meester die Anakin Skywalker ontdekt op Tatooine en probeert hem te trainen als Jedi. Hij sterft in Episode I.</p>
+            </li>
+            <li><h3>Mace Windu (gespeeld door Samuel L. Jackson):</h3>
+            <p>Een krachtige Jedi-meester en lid van de Jedi Raad.</p>
+            </li>
+            <li><h3>Yoda (CGI-geanimeerd, met de stem van Frank Oz):</h3>
+            <p>De oude, wijze Jedi-meester, bekend om zijn kracht in de Force en lichtzwaardvaardigheden.</p>
+            </li>
+            <li><h3>Palpatine / Darth Sidious (gespeeld door Ian McDiarmid):</h3>
+            <p>De Sith-heer die uiteindelijk de controle krijgt over de Galactische Republiek en transformeert in de keizer Palpatine.</p>
+            </li>
+            <li><h3>Count Dooku / Darth Tyranus (gespeeld door Christopher Lee):</h3>
+            <p>Een voormalige Jedi-meester die zich tot de donkere kant heeft gewend en een belangrijke rol speelt in de Clone Wars.</p>
+            </li>
+        </ul>
+        <script>
+                    const apiUrl = '"https://swapi.dev/api/people/"'; 
+
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', `${apiUrl}?apiKey=${apiKey}`, true);
+
+xhr.onload = function () {
+    if (xhr.status === 200) {
+        const responseData = JSON.parse(xhr.responseText);
+        document.getElementById('api-data').innerText = JSON.stringify(responseData, null, 2);
+    }
+};
+
+xhr.send();
+        </script>
