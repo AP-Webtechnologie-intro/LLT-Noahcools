@@ -104,8 +104,25 @@
         <ol>
             <li><strong>The Clone Wars (2008):</strong> Geanimeerde film die de gelijknamige tv-serie introduceert.</li>
             <li><strong>The Mandalorian (2019-heden):</strong> Een populaire tv-serie die zich afspeelt na Episode VI en volgt een premiejager genaamd Din Djarin.</li>
-            <!-- Voeg hier meer films en series toe indien gewenst -->
-        </ol>
+ 
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<div id="map"></div>
+
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            // Initialize the map
+            var mymap = L.map('map').setView([51.5189, -0.7143], 13); // Pinewood Studios coordinates
+
+            // Add a tile layer to the map
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(mymap);
+
+            // Add a marker to the map (Pinewood Studios)
+            L.marker([51.5189, -0.7143]).addTo(mymap)
+                .bindPopup('Pinewood Studios - Star Wars Filming Location');
     </section>
     <section>
         <figure>
